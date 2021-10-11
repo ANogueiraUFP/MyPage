@@ -1,10 +1,212 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+ background-color: #006ba6;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+ background-color: #9cf6f6;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #303f9f;
+    border-color: #303f9f;
+    border-radius: 0;
+}
+
+/* Title */
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #b2ff59;
+}
+
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+    margin: 2px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #c0ca33;
+    background-color: #666ad1;
+    border-radius: 25px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #c0ca33;
+    background-color: #666ad1;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #c0ca33;
+    background-color: #D5D5D5;
+}
+
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #666ad1;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+
+button.navbar-btn {
+    margin-top: 8px;
+}
+
+.btn-custom {
+    color: #fff;
+}
+
+.btn.btn-custom {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    color: #1565c0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn.btn-custom:hover {
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 3px 8px 10px #484848;
+    transform: translateY(-3px);
+    transition: all 0.3s ease 0s;
+}
+
+.btn.btn-custom:focus {
+    outline: none;
+}
+
+
+#sign-up:hover {
+    background-color: #f57f17;
+    text-decoration: none;
+}
+
+#login:hover {
+    background-color: #d50000;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #2979ff;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#slogan {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.jumbotron {
+    background-color: #e1f5fe;
+}
+
+.override-nav-btn {
+    color: #fff !important;
+}
+
+.btn.btn-custom.override-nav-btn {
+    background-color: #303f9f !important;
+}
+
+.btn.btn-custom.override-nav-btn:hover {
+    background-color: #303f9f;
+    border: 1px solid #fff;
+    transition: 0;
+    transform: translateY(0px);
+    box-shadow: 0px 0px 0px;
+    font-weight: normal;
+}
+
+.btn.btn-custom.override-nav-btn:focus {
+    background-color: #666ad1;
+}
+
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
 
 img {
     border-radius: 50%;
     width: 70%;
     height: 70%;
+    position: absolute;
 }
+
+.navbar {
+    position: fixed;
+    margin-bottom: 100px;
+}
+
+#navbarCollapse .nav-link {
+
+    color: #0000ff;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
 
 h1 {
     font-weight: normal;
@@ -51,16 +253,15 @@ a {
 
 #footer-button {
 
-    margin: 40px auto 140px;
+    bottom: 0;
     color: white;
-    display: block;
     text-align: center;
-    border: none;
-    padding: 14px 54px;
+    position: fixed;
+    width: 100%;
 
 }
 
-button.btn.btn-secondary a{
+button.btn.btn-secondary a {
     color: white;
 
 }

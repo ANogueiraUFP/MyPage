@@ -1,25 +1,24 @@
-/* Split the screen in half */
-.split {
-    height: 100%;
-    width: 50%;
-    position: relative;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+body {
+    font-family: sans-serif;
+    background:linear-gradient(to right, #006ba6 50%, #9cf6f6 50%);
+    height: 500px; /* You must set a specified height */
 }
 
-/* Control the left side */
-.left {
-    left: 0;
- background-color: #006ba6;
+.myImage {
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20%;
+
+
 }
 
-/* Control the right side */
-.right {
-    right: 0;
- background-color: #9cf6f6;
-}
 
 /* navbar */
 .navbar-default {
@@ -173,25 +172,11 @@ h1 {
 
 /* If you want the content centered horizontally and vertically */
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
 }
 
-/* Style the image inside the centered container, if needed */
-.centered img {
-    width: 150px;
-    border-radius: 50%;
-}
 
-img {
-    border-radius: 50%;
-    width: 70%;
-    height: 70%;
-    position: absolute;
-}
+
 
 .navbar {
     position: fixed;
@@ -216,15 +201,6 @@ h1 {
     text-align: center;
 }
 
-body {
-    font-family: sans-serif;
-    background-image: url("images/background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: right top; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    height: 500px; /* You must set a specified height */
-}
 
 p {
     color: white;
